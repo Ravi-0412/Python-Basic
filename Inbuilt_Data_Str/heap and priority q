@@ -1,0 +1,35 @@
+import heapq  # follows the min heap property
+heap= []
+heapq.heappush(heap,10)  # 1st para is any iterative data structure and 2nd para
+                        # is item you want to push
+                        # will push the ele into heap maintaing the min heap property
+heapq.heappush(heap,1)
+heapq.heappush(heap,5)
+# print(heap)
+heapq.heappop(heap)    # will delete the 1st ele(since min heap so will delete the min value)
+print(heap)
+
+# to convert a given list or iterative one into heap
+list1= [1,3,5,2,4,6]
+heapq.heapify(list1)    # will convert the given list into min heap
+print(list1)
+
+
+print(heapq.heappushpop(list1,89))  # first push the given ele then return the 1st ele(poped one)
+print(list1)
+
+print(heapq.heapreplace(list1,89))  # first pop and return the poped ele  then return push the given element
+print(heap)
+
+# printing the nth smallest 
+print(heapq.nsmallest(2, list1))  #will return the 1st two smallest no from the heap
+print(heapq.nlargest(3, list1))  #will return the 1st three largest no from the heap
+
+
+# implememnting priority queue
+list2= [(1,"ria"),(4,"sia"),(3,"gia")]  # 1st is priority and 2nd one is item
+# since heapq follows min heap property so it will consider the smallest value as highest priority
+heapq.heapify(list2)  # will form a min heap based on value(1st ele)
+print(list2)
+heapq.heappop(list2)  
+print(list2)
