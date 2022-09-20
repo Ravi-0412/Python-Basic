@@ -1,14 +1,14 @@
 # my_dic= {}
 # my_dic= {1: 'abc', 2: 'xyz'}
 # print(my_dic)
-my_dict= {'name': 'ravi', 'add': 'bihar', 'age': 22}
+# my_dict= {'name': 'ravi', 'add': 'bihar', 'age': 22}
 # print(my_dict)
 # my_dict= dict()
 # my_dict= dict([(1,'abc'),(2,'xyz')])  # another way of creating dict
 # print(my_dict)
 
 # print(my_dict['name'])
-print(my_dict.get('add'))   # print(my_dict['add])
+# print(my_dict.get('add'))   # print(my_dict['add])
 # my_dict['name']='raushan'
 # print(my_dict)
 # my_dict['degree']= 'BTECH'
@@ -26,7 +26,7 @@ print(my_dict.get('add'))   # print(my_dict['add])
 
 
 # method to get key-value pair(items), keys, values in a dictionary
-# subjects= {2:4, 3:9, 4:16, 5:25}
+subjects= {2:4, 3:9, 4:16, 5:25}
 # print(subjects.items())  # will print key-value pair in a list
 # print(subjects.keys())   # will print keys  in a list
 # print(subjects.values())  # will print values in a list
@@ -34,7 +34,10 @@ print(my_dict.get('add'))   # print(my_dict['add])
 
 # #method for printing items in form of tuples
 # for pair in subjects.items():
-#     print(pair)
+#     print(pair)  
+
+# for ele in subjects:
+#     print(ele)      # this will print only the keys
 
 
 # new_dict= {k:v for k,v in subjects.items() if v>4}
@@ -63,7 +66,8 @@ print(my_dict.get('add'))   # print(my_dict['add])
 
 # #method 1(best one,Time=o(n)): to get the key of a specific value in Dictionary
 # subjects= {2:4, 3:9, 4:16, 5:25}
-# key_list1= list(subjects)  # will store all values in a list
+key_list1= list(subjects)  # will store all values in a list
+print(key_list1)
 # key_list= list(subjects.keys())    # will store all keys in a list
 # val_list= list(subjects.values())  # will store values in a list
 # position=val_list.index(9)

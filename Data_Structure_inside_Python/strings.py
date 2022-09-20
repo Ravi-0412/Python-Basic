@@ -18,7 +18,7 @@ s3= "Hello World"
 
 # print(s3.upper())   # will convert whole char in the string into upper case
 # s3= "Hello World"
-# print(s3.split())  # wiill produce a list with words of the given string
+print(s3.split())  # wiill produce a list with words of the given string
 
 lst= ['one','two','three','four']
 print(' '.join(lst))     # since we are putting space inside ' ' so it will 

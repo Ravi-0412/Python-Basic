@@ -28,7 +28,8 @@ arr= [[0]*3]*6   # will make a 2D array where no of rows= 6
                     # and col= 3
                 
 # OR
-# arr= [[0 for i in range(3)] for i in range(4)]  # row=3, col= 4
+# arr= [[0 for i in range(cols)] for i in range(rows)]  
+# note: use this way to create in case you will chnage the matrix ele value later
 print(arr)
 
 # method to acccess the each row in 2D array
@@ -95,7 +96,7 @@ for row in matrix:   # will point to one of the row of matrix one by one
 # print(matrix)
 
 
-# reversing a given matrix when no of rows and col is not known
+# reversing a given matrix (ele of rows) when no of rows and col is not known
 # shortcut and best
 reverse=[[row[-i] for i in range(1,len(row)+1)] for row in matrix]
 print(reverse)

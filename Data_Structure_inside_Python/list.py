@@ -8,7 +8,7 @@
 # lst.remove('two')   # will remove two from the list
 
 # lst.append(lst1)  # will append the list1(in list form itself) at the last of lst
-# lst.extend(lst1)  # will only append elements of lst1(not list form) in the lst 
+# lst.extend(lst1)  # will only append elements of lst(not with list) in the lst 
 # print(lst)
 
 # del lst[1]   # will delete the ele at index '1' from the list
@@ -153,9 +153,6 @@ print(k)
 print(j)
 print(p)
 print(r)
-
-
-
 
 
 # deleting a list or some elements of a list
