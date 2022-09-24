@@ -1,3 +1,5 @@
+# https://www.geeksforgeeks.org/difference-between-list-and-array-in-python/
+
 # lst=['one','two','three','four']
 # lst1= [1,2,'ram']
 # lst.append('five')
@@ -103,6 +105,21 @@ print(my_list)
 # so in orderf to get the list youy will have to write:-  print(list(a))
 # method 3: list1= list[::-1]
 
+# for reversing in the specific range , by using slicing
+# for slicing nums[a:b:c], always remember that 'a': represents starting index, 'b': represents the end index excluding the end index 
+# and 'c': represents the steps to move and if 'c' is negative means we have to move in opposite direction with given move from start index to end index(excluding) 
+# and if 'a',or  'b' is not given then we have to move in whole array either in positive direction or opposite direction depending upon the sign of 'c'
+nums= [1,2,3,4,5,6,7]
+n= len(nums)
+k=3
+# nums1= nums[k:-1:-1]  # for reversing like this till index 0(in opposite direction) it wont work, don't know why 
+# so use 
+nums1= nums[k::-1]   # will reverse the array from index k to index 0 (minimum possible index)
+nums2= nums[k:n:-1]  
+part = nums[4:1:-1]
+print(part)
+print(nums2,nums1)
+
 
 # square= []
 # for i in range(10):
@@ -169,3 +186,24 @@ print(a)
 
 # a.clear()     # will delete whole list
 # a= []      # another way to delete all ele
+
+
+
+# inserting an ele at specific index in python
+# https://www.geeksforgeeks.org/python-list-insert/
+a= [1,2,3]
+# a.insert(index, ele)
+# after inserting that ele at proper index, it will just move all the ele after that index one step ahead
+# it doesnt delete the index at that position
+
+
+a=[]*n  # this will not allocate the space for n ele, space will only be allocated when we will initialise the array with some element
+a= []*6
+a.insert(2,3)
+a.insert(4, 4)
+print(a)
+# when you will do insert operation on this(empty or uninitialised array) it will start inserting from start only not from the given index
+# as list is dynamic, it doesn't create the memory for n ele at the start itself
+# this will happen for all type of data structure in python if you will try ang operation on empty and uninitialised data structure
+# so better initialise with some proper value and then do the operation then, all operation will work normally
+

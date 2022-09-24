@@ -19,13 +19,14 @@ A= matrix(m,n)
 
 
 # another method and some more thing
-
+# https://www.geeksforgeeks.org/python-using-2d-arrays-lists-the-right-way/   
+# just go through the link
 # arr= [0]*6   # 1D array
 # print(arr)
 
 # way to create 2D matrix
 arr= [[0]*3]*6   # will make a 2D array where no of rows= 6
-                    # and col= 3
+                    # and col= 3, not a good way to create like this if you will modify this matrix later
                 
 # OR
 # arr= [[0 for i in range(cols)] for i in range(rows)]  
@@ -54,7 +55,7 @@ matrix= [
 ]
 
 # transpose= []
-# for i in range(4):
+# for i in range(4):  # 4: no of column
 #     lst= []
 #     for row in matrix:
 #         lst.append(row[i])
@@ -64,6 +65,12 @@ matrix= [
 # concise way of finding the transpose of a matrix
 transposed= [[row[i] for row in matrix] for i in range(4)]
 print(transposed)
+
+# OR
+transpose= [[]]
+for i in range(col):
+    for j in range(row):
+    transpose[i][j]= matrix[j][i]
 
 
 # accessing the ele of the matrix
@@ -79,6 +86,7 @@ for row in matrix:   # will point to one of the row of matrix one by one
     # print(row)
     for i in row:   # will point to elements of particular row one by one
         print(i)
+
 
 # method2- e.g: 
 # reversing the each row of the given matrix   

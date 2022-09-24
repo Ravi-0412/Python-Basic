@@ -1,42 +1,31 @@
-# stock prices on a given date
-# 1st using list
-
-
-# ?? don't know why this program not working
-
-# stock_prices= []
-# with open("stock_prices.txt","r") as f:
-#     for line in f:
-#         tokens= line.split(',')
-#         day= tokens[0]
-#         price= float(tokens[1])
-#         stock_prices.append([day,price])
-# print(stock_prices)
-
 
 # example implementing dictionary using hash map
 
 class HashTable:
     def __init__(self):
-        self.MAX= 10  #assuming max no in array =100
+        self.MAX= 100  #assuming max no in array =100
         self.arr= [None for i in range(self.MAX)]    # INITIALISING all elements with 'None'
 
+    # will tell the position at which we have to store the values 
     def get_hash(self,key):
         h=0
         for char in key:
             h+= ord(char)  #will sum up the ascii value all the characters of key
         return h%self.MAX  
+
     # now for adding key value pair
     def __setitem__(self,key,val):
-        h= self.get_hash(key)
+        h= self.get_hash(key)   # first get the position where to put according to corresponding key
         self.arr[h]= val
+
     #for getting value by calling a key
     def __getitem__(self,key):
-        h= self.get_hash(key)
+        h= self.get_hash(key)   # first get the position where key is present and then return its value
         return self.arr[h]
+
     # deleting value at a particular key
     def __delitem__(self,key):
-        h= self.get_hash(key)
+        h= self.get_hash(key)  # first get the position and delete ist value
         self.arr[h]= None
 
 t= HashTable()

@@ -1,6 +1,7 @@
 # num = -100
 # print(abs(num))
-# print(divmod(9,2))  # The divmod() method in python takes two numbers and returns a pair of numbers consisting of their quotient and remainder.
+# print(divmod(9,2))  # The divmod() method in python takes two numbers and returns a pair of numbers 
+# consisting of their quotient and remainder.
 
 # https://www.geeksforgeeks.org/enumerate-in-python/
 # numbers= [10,20,30,40,50]
@@ -26,7 +27,8 @@ positive_num_list= filter(find_positive_number,number)  # stores the num that fo
 print(positive_num_list)
 
 # https://stackoverflow.com/questions/47578353/python-difference-between-filter-and-map  (difference between map and filter)
-# map evaluates the function expression and returns back the result as items. So filter always expects its function to do comparison type of task to filter out the elements
+# map evaluates the function expression and returns back the result as items.
+#  So filter always expects its function to do comparison type of task to filter out the elements
 #  while map expects its functions to evaluate a statement to get some result.
 
 # numbers=[1,2,3,4]

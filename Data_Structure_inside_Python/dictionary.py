@@ -7,7 +7,7 @@
 # my_dict= dict([(1,'abc'),(2,'xyz')])  # another way of creating dict
 # print(my_dict)
 
-# print(my_dict['name'])
+# print(my_dict['name'])  # will give the value corresponding to the given key
 # print(my_dict.get('add'))   # print(my_dict['add])
 # my_dict['name']='raushan'
 # print(my_dict)
@@ -32,7 +32,7 @@ subjects= {2:4, 3:9, 4:16, 5:25}
 # print(subjects.values())  # will print values in a list
 
 
-# #method for printing items in form of tuples
+# method for printing items in form of tuples
 # for pair in subjects.items():
 #     print(pair)  
 
@@ -66,7 +66,7 @@ subjects= {2:4, 3:9, 4:16, 5:25}
 
 # #method 1(best one,Time=o(n)): to get the key of a specific value in Dictionary
 # subjects= {2:4, 3:9, 4:16, 5:25}
-key_list1= list(subjects)  # will store all values in a list
+key_list1= list(subjects)  # will store all keys in a list
 print(key_list1)
 # key_list= list(subjects.keys())    # will store all keys in a list
 # val_list= list(subjects.values())  # will store values in a list

@@ -23,7 +23,7 @@ s.add(4)
 
 # Parameters : Update() method takes only a single argument. T
 #the single argument can be a set, list, tuples or a dictionary.
-# It automatically converts into a set and adds to the set before update()
+# It automatically converts into a set and adds to the set at last
 s.update([5,6,7])
 print(s)
 list1 = [1, 2, 3]
@@ -43,7 +43,7 @@ set1.update(list3)
 print(set1)
 
 # s= {1,2,3,4,5,6,7,8}
-# s.discard(3)
+# s.discard(3)  # will remove 3 from the set
 # print(s)
 
 # s1= {1,2,3,4,5,6,7,8}
@@ -51,9 +51,9 @@ print(set1)
 # # print(s1 | s2)   # union
 # print(s1.union(s2))
 # print(s1 & s2)   # intersection
-# print(s1.difference(s2))
+# print(s1.difference(s2))   # s1-s2
 # print(s2.difference(s1))
-# print(s1.symmetric_difference(s2)) # can use '^' operator also
+# print(s1.symmetric_difference(s2)) # can use '^' operator also     # is used to get the elements present in either of the two sets, but not common to both the sets
 
 
 x= {1,2,3,4,5,6,7}
