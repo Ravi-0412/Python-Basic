@@ -1,4 +1,5 @@
 # https://www.geeksforgeeks.org/difference-between-list-and-array-in-python/
+# https://stackoverflow.com/questions/27073596/what-is-the-cost-complexity-of-insert-in-list-at-some-location
 
 # lst=['one','two','three','four']
 # lst1= [1,2,'ram']
@@ -101,8 +102,9 @@ print(my_list)
 # reversing a list in python
 
 # method 1: using list.reverse()
-# method 2: using a= reversed(list)  # this method will return the object
-# so in orderf to get the list youy will have to write:-  print(list(a))
+# method 2: using a= reversed(list)  # this method will return the object. for printing store in list
+
+
 # method 3: list1= list[::-1]
 
 # for reversing in the specific range , by using slicing
@@ -202,7 +204,7 @@ a= []*6
 a.insert(2,3)
 a.insert(4, 4)
 print(a)
-# when you will do insert operation on this(empty or uninitialised array) it will start inserting from start only not from the given index
+# when you will do "insert operation at a fixed index" on this(empty or uninitialised array) it will start inserting from start only not from the given index
 # as list is dynamic, it doesn't create the memory for n ele at the start itself
 # this will happen for all type of data structure in python if you will try ang operation on empty and uninitialised data structure
 # so better initialise with some proper value and then do the operation then, all operation will work normally

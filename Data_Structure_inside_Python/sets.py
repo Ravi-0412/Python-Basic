@@ -1,3 +1,5 @@
+# https://www.scaler.com/topics/mutable-data-typesg-in-python/
+
 # s= {1,2,3}
 # print(s)
 # print(type(s))
@@ -16,7 +18,7 @@
 # adding elemenst to the set
 s= {1,2,3}
 s.add(4)
-# update()
+# update() : used to add multiple ele to the set
 # Syntax :  set1.update(set2) 
 
 # Here set1 is the set in which set2 will be added.
@@ -32,7 +34,7 @@ list3 = [10, 11, 12]
 # Lists converted to sets
 set1 = set(list2)  
 set2 = set(list1)
-# Update method
+# Update method: used to add multiple values to a set
 set1.update(set2)  #will add the values of set2 to set1
 # Print the updated set
 print(set1)

@@ -30,7 +30,7 @@ arr= [[0]*3]*6   # will make a 2D array where no of rows= 6
                 
 # OR
 # arr= [[0 for i in range(cols)] for i in range(rows)]  
-# note: use this way to create in case you will chnage the matrix ele value later
+# note: use this way to create in case you will change the matrix ele value later
 print(arr)
 
 # method to acccess the each row in 2D array
@@ -54,23 +54,27 @@ matrix= [
     [9,10,11,12]
 ]
 
+#logic: har ek row ka phla ele pick kar ke lst ke under rakhte jao
 # transpose= []
-# for i in range(4):  # 4: no of column
+# row= len(matrix)
+# col= len(row)
+# for i in range(col):  # 4: no of column
 #     lst= []
 #     for row in matrix:
 #         lst.append(row[i])
 #     transpose.append(lst)
 # print(transpose)
 
+
 # concise way of finding the transpose of a matrix
-transposed= [[row[i] for row in matrix] for i in range(4)]
+transposed= [[row[i] for row in matrix] for i in range(col)]
 print(transposed)
 
 # OR
 transpose= [[]]
 for i in range(col):
     for j in range(row):
-    transpose[i][j]= matrix[j][i]
+    transpose[i][j]= matrix[j][i]   # Definition of transpose
 
 
 # accessing the ele of the matrix

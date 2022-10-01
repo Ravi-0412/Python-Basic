@@ -1,5 +1,5 @@
 l1= ["eat","sleep","repeat"]
-print(enumerate(l1))   # won't work as it returns an object like a zip function, will print the address
+print(enumerate(l1))   # won't work as it returns an object like a zip function, will print the address. for printing store in any data types
 # l2= enumerate(l1)   # will assign the index like 0,1,2.. to each element
 # print(l2)    # will print the address of the object, for printin you hvae to change any data types like in case of zip()
 # l3= list(enumerate(l1))

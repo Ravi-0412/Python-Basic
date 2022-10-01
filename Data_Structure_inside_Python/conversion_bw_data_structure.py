@@ -4,6 +4,7 @@
 # but join can't be same as the given order, it can join into any order
 
 s = {'a', 'b', 'c', 'd'}
+print(s)
 print(' '.join(s))   # you can store in variable also then print
 print(''.join(s))
 
