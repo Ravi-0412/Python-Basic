@@ -4,6 +4,7 @@
 # my_dict= {'name': 'ravi', 'add': 'bihar', 'age': 22}
 # print(my_dict)
 # my_dict= dict()
+
 # my_dict= dict([(1,'abc'),(2,'xyz')])  # another way of creating dict
 # print(my_dict)
 
@@ -16,6 +17,7 @@
 # print(my_dict.pop('add'))
 # print(my_dict)
 
+# del my_dict[add]  # will delete the key value pair
 
 # squares= {2:4, 3:9, 4:16, 5:25}
 # my_dict= squares.copy()   # way to copy dict

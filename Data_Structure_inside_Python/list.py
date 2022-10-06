@@ -101,9 +101,9 @@ print(my_list)
 
 # reversing a list in python
 
-# method 1: using list.reverse()
-# method 2: using a= reversed(list)  # this method will return the object. for printing store in list
-
+# method 1: using list.reverse()    # this method will return the object. for printing store in list
+# if you will print(list.reverse), it will print None. same for other inbuilt method, you have to print in separate line after using the function
+# method 2: using a= reversed(list)  # like this
 
 # method 3: list1= list[::-1]
 

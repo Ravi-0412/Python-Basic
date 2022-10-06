@@ -3,8 +3,9 @@
 # inside the '' , ele will get joined by that char 
 # but join can't be same as the given order, it can join into any order
 
-s = {'a', 'b', 'c', 'd'}
-print(s)
+s = {'a', 'b', 'c', 'd'}  # it is a set not dictionary
+print(type(s))
+print(s)  # can print in any order
 print(' '.join(s))   # you can store in variable also then print
 print(''.join(s))
 

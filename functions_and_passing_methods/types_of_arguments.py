@@ -4,7 +4,9 @@
 
 # keyword variable length argument
 # https://www.youtube.com/watch?v=kB829ciAXo4
+# https://www.geeksforgeeks.org/args-kwargs-python/
 
 
 # local and global variable
 # https://www.youtube.com/watch?v=QYUbLevwgDQ&t=1s
+# https://www.geeksforgeeks.org/global-local-variables-python/

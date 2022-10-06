@@ -1,3 +1,5 @@
+# https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/
+
 import heapq  # follows the min heap property
 heap= []
 heapq.heappush(heap,10)  # 1st para is any iterative data structure and 2nd para
@@ -18,7 +20,7 @@ print(list1)
 print(heapq.heappushpop(list1,89))  # first push the given ele then return the 1st ele(poped one)
 print(list1)
 
-print(heapq.heapreplace(list1,89))  # first pop and return the poped ele  then return push the given element
+print(heapq.heapreplace(list1,89))  # first pop and return the poped ele  then  push the given element
 print(heap)
 
 # printing the nth smallest 
