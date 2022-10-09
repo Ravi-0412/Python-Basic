@@ -20,3 +20,4 @@ for count,ele in enumerate(l1,100):  # will assign the index from 100
 for count,ele in enumerate(l1):
     print(count)
     print(ele)
+

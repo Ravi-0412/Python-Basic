@@ -1,5 +1,5 @@
-# a,b= 10,156
-# # print(~b)
+a,b= 10,156
+print(~15)   # writing like this means taking the 2's compl by writing the
 # l=[1,2,3,4]
 # print(1 in l)
 # d={1:"a",2:"b"}
