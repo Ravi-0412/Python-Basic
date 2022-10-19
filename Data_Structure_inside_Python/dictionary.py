@@ -97,3 +97,5 @@ subjects= {2:4, 3:9, 4:16, 5:25}
 print(subjects.get(2,-1))  # if there if no value for key '2'
                                # then it will return -1
 print(subjects.get(1,-1))   # will return -1 since there is no val for key '1'
+
+# note: dictionary doesn't store the duplicates (same key value pair)

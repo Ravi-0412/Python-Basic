@@ -210,3 +210,20 @@ print(a)
 # this will happen for all type of data structure in python if you will try ang operation on empty and uninitialised data structure
 # so better initialise with some proper value and then do the operation then, all operation will work normally
 
+
+
+# adding two lists
+print([]+[1])          # output: [1]
+print([[]]+ [[1]])     # output: [[], [1]]
+
+
+# both will print the different thing
+# https://stackoverflow.com/questions/16641119/why-does-append-always-return-none-in-python
+a= []
+print(a.append(4))   # giving 'None' as output. Actually 'append' is a type of void function and after appending it's returning according to the 'append' function
+                    # basically printing the returned value of append which is always 'None'
+
+# in this we are printing the list 
+a= []
+a.append(4)
+print(a)     
