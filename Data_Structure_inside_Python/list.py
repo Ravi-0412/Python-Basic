@@ -216,6 +216,18 @@ print(a)
 print([]+[1])          # output: [1]
 print([[]]+ [[1]])     # output: [[], [1]]
 
+# appending in 2d and 1d array
+# append basically means add the new ele after all the existing ele 
+a= [[]]   
+a.append([3])   # for this 2D array existing ele is '[]'
+print(a)     # will print [[], [3]]
+
+
+a= []
+a.append(3)   # here there is no existing ele
+print(a)    # will print '[3]'
+
+
 
 # both will print the different thing
 # https://stackoverflow.com/questions/16641119/why-does-append-always-return-none-in-python
