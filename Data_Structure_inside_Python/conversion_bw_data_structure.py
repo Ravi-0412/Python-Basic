@@ -15,5 +15,23 @@ print(''.join(s))
 s1= "geeksforgeeks"
 print(list(s1))
 
+# for converting list into string use the first two method
+a= [1,2]
+print("".join(str(e) for e in a))
+
+a= ['1','2']
+print("".join(a))
+
+a= [1,2]   
+print("".join(str(a)))   # this will return the same list
+
+# even writing like this will return the same list. Don't know why 
+a= [1,2]
+b= str(a)    # showing type 'str' only but printing the same list only
+print("".join(str(b)))
 
 
+# note: using join you can print only, you can't store in any data structure
+# for storing or appending in any data structure, you have to do by normal method
+
+# submitted on leetcode
