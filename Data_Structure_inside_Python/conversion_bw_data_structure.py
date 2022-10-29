@@ -31,7 +31,8 @@ b= str(a)    # showing type 'str' only but printing the same list only
 print("".join(str(b)))
 
 
-# note: using join you can print only, you can't store in any data structure
-# for storing or appending in any data structure, you have to do by normal method
+# note: using join you can store in any other data structure iff they are converted first to char like:
+a= [1,2]
+print("".join(str(e) for e in a))
 
-# submitted on leetcode
+
