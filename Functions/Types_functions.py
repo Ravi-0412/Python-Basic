@@ -65,3 +65,9 @@ product= reduce(multiply,numbers)  # 1st para is operations(or functions)
                                    # and second para is the list on which you want to apply that operations
 print(product)
 
+
+
+# bisect function
+# https://www.geeksforgeeks.org/bisect-algorithm-functions-in-python/
+# used this in Q "300. LIS"
+
