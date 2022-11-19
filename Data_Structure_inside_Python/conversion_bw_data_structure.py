@@ -34,5 +34,18 @@ print("".join(str(b)))
 # note: using join you can store in any other data structure iff they are converted first to char like:
 a= [1,2]
 print("".join(str(e) for e in a))
+# e.g: 
+a= [1,2]
+b= []
+b.append("->".join(str(e) for e in a))
+print(b)   # will print ['1->2']   # will join each ele in list by "->"
+
+# but this will print totally different
+a= [1,2]
+b= []
+b+= "->".join(str(e) for e in a)   
+print(b)    # ['1', '-', '>', '2']   # just cosidered all the char in above print as char 
+
+
 
 

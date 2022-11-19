@@ -148,8 +148,6 @@ print(nums2,nums1)
 # print(new_list)
 
 
-
-
 # iterating for num directly in list for specific range
 arr = [17,18,5,4,6,1]
 n= len(arr)
@@ -239,3 +237,12 @@ print(a.append(4))   # giving 'None' as output. Actually 'append' is a type of v
 a= []
 a.append(4)
 print(a)     
+
+
+# unusual way python work(shocked)
+# i was thinking when we will print the value of 'i' outside the function then it will be '4'(value passed inside range)
+# nut it stops at max possible value only
+# came through this in Q : "199. Binary Tree Right Side View"
+for i in range(4):
+    print(i,"in")
+print(i)   # will print '3' only

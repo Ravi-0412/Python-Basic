@@ -18,7 +18,16 @@ s3= "Hello World"
 
 # print(s3.upper())   # will convert whole char in the string into upper case
 # s3= "Hello World"
-print(s3.split())  # wiill produce a list with words of the given string
+
+# wiill produce a list with words of the given string. will split the words when it will see any 'space' for default 
+print(s3.split())  # output: ['Hello', 'World']
+
+# for detail: https://www.geeksforgeeks.org/python-string-split/
+
+# for splitting when you see any specific character then use
+# s3= "Hello,World"
+print(s3.split(","))   # will split when it will see comma(,). you can use any char here
+
 
 lst= ['one','two','three','four']
 print(' '.join(lst))     # since we are putting space inside ' ' so it will 
