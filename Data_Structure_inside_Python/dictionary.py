@@ -99,3 +99,11 @@ print(subjects.get(2,-1))  # if there if no value for key '2'
 print(subjects.get(1,-1))   # will return -1 since there is no val for key '1'
 
 # note: dictionary doesn't store the duplicates (same key value pair)
+
+
+# dic=Counter(hand)
+# sorted_dic= sorted(dic.items(), key=itemgetter(0))  # will sort on index '0'(key) and will print the key_value pair. or use
+# print(sorted_dic)
+# print(sorted(dic.items(), key= lambda i:i[0]))
+# print(sorted(dic))  # will only print the key in sorted format
+
