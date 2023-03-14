@@ -1,5 +1,5 @@
 import fact   #own module
-factorial(5)  
+fact.factorial(5)    # calling the methods inside imported module like this.
 
 
 # import math
