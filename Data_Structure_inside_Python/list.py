@@ -11,7 +11,8 @@
 # lst.remove('two')   # will remove two from the list
 
 # lst.append(lst1)  # will append the list1(in list form itself) at the last of lst
-# lst.extend(lst1)  # will only append elements of lst(not with list) in the lst 
+# print(lst)
+# lst.extend(lst1)  # will only append elements of lst(not with list form) in the lst
 # print(lst)
 
 # del lst[1]   # will delete the ele at index '1' from the list
@@ -117,11 +118,10 @@ n= len(nums)
 k=3
 # nums1= nums[k:-1:-1]  # for reversing like this till index 0(in opposite direction) it wont work, don't know why 
 # so use 
-nums1= nums[k::-1]   # will reverse the array from index k to index 0 (minimum possible index)
-nums2= nums[k:n:-1]  
-part = nums[4:1:-1]
-print(part)
-print(nums2,nums1)
+# nums1= nums[k::-1]   # will reverse the array from index k to index 0 (minimum possible index)
+# part = nums[4:1:-1] # will reverse from index '4' to '2'(before 1)
+# print(part)
+# print(nums1)
 
 
 # square= []
@@ -203,10 +203,12 @@ a= []*6
 a.insert(2,3)
 a.insert(4, 4)
 print(a)
-# when you will do "insert operation at a fixed index" on this(empty or uninitialised array) it will start inserting from start only not from the given index
-# as list is dynamic, it doesn't create the memory for n ele at the start itself
-# this will happen for all type of data structure in python if you will try ang operation on empty and uninitialised data structure
-# so better initialise with some proper value and then do the operation then, all operation will work normally
+# when you will do "insert operation at a fixed index" on this(empty or uninitialised array) 
+# it will start inserting from start only not from the given index.
+
+# as list is dynamic, it doesn't create the memory for n ele at the start itself.
+# this will happen for all type of data structure in python if you will try any operation on empty and uninitialised data structure.
+# so better initialise with some proper value and then do the operation then, all operation will work normally.
 
 
 
@@ -230,7 +232,8 @@ print(a)    # will print '[3]'
 # both will print the different thing
 # https://stackoverflow.com/questions/16641119/why-does-append-always-return-none-in-python
 a= []
-print(a.append(4))   # giving 'None' as output. Actually 'append' is a type of void function and after appending it's returning according to the 'append' function
+print(a.append(4))   # giving 'None' as output. Actually 'append' is a type of void function 
+                    # and after appending it's returning according to the 'append' function.
                     # basically printing the returned value of append which is always 'None'
 
 # in this we are printing the list 
@@ -241,7 +244,7 @@ print(a)
 
 # unusual way python work(shocked)
 # i was thinking when we will print the value of 'i' outside the function then it will be '4'(value passed inside range)
-# nut it stops at max possible value only
+# but it stops at max possible value only
 # came through this in Q : "199. Binary Tree Right Side View"
 for i in range(4):
     print(i,"in")

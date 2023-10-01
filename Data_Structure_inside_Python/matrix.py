@@ -108,12 +108,12 @@ for row in matrix:   # will point to one of the row of matrix one by one
 # print(matrix)
 
 
-# reversing a given matrix (ele of rows) when no of rows and col is not known
+# reversing a given matrix (ele of rows) when no of rows and col is known
 # shortcut and best
 reverse=[[row[-i] for i in range(1,len(row)+1)] for row in matrix]
 print(reverse)
 
-# reversing a given matrix when no of rows and col is not known
+# reversing a given matrix when no of rows and col is known
 # for row in matrix:
 #     col= len(row)   # no of col is equal to the no of ele in each row
 #     start,end= 0, col-1

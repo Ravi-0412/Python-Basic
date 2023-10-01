@@ -48,6 +48,8 @@ print(set1)
 # s.discard(3)  # will remove 3 from the set
 # print(s)
 
+#Set operation
+
 # s1= {1,2,3,4,5,6,7,8}
 # s2= {3,4,9,10,5,7,11}
 # # print(s1 | s2)   # union

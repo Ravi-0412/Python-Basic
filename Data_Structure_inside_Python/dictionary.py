@@ -23,7 +23,7 @@
 # my_dict= squares.copy()   # way to copy dict
 # print(my_dict)
 
-# subjects={}.fromkeys(['math','english','hindi'],0)  # when you want to init key with same valu at once
+# subjects={}.fromkeys(['math','english','hindi'],0)  # when you want to init key with default value at once.
 # print(subjects)
 
 
@@ -104,6 +104,12 @@ print(subjects.get(1,-1))   # will return -1 since there is no val for key '1'
 # dic=Counter(hand)
 # sorted_dic= sorted(dic.items(), key=itemgetter(0))  # will sort on index '0'(key) and will print the key_value pair. or use
 # print(sorted_dic)
+
+# Other way of writing above one
 # print(sorted(dic.items(), key= lambda i:i[0]))
+
+# If you want to get pair based on sorted order of value
+# print(sorted(dic.items(), key= lambda i:i[1]))
+
 # print(sorted(dic))  # will only print the key in sorted format
 
